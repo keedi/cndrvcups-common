@@ -1,0 +1,11 @@
+Package: cndrvcups-common
+Version: 2.90-1
+Architecture: amd64
+Maintainer: CANON INC. <sup-debian@list.canon.co.jp>
+Installed-Size: 20586
+Depends: lib32stdc++6 (>= 4.1.1), libc6 (>= 2.15), libc6-i386 (>= 2.3.2), libcups2 (>= 1.4.0), cupsys | cups, gs-esp | ghostscript (>= 9.00)
+Replaces: cndrvcups-lipslx, cndrvcups-ufr2-uk, cndrvcups-ufr2-us
+Section: net
+Priority: optional
+Description: Canon Printer Driver Common Modules Ver.2.90
+ Canon Printer Driver Common Modules.

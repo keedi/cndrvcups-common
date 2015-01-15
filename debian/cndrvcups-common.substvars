@@ -1,0 +1,2 @@
+shlibs:Depends=cndrvcups-common, lib32stdc++6 (>= 4.1.1), libc6 (>= 2.15), libc6-i386 (>= 2.3.2), libcups2 (>= 1.4.0)
+misc:Depends=
