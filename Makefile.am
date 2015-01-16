@@ -7,7 +7,7 @@ scripts=for dir in $(dirs); do\
 				(cd $$dir; make $$target)|| exit 1;\
 		done
 
-all :
+all-local :
 	$(scripts)
 
 clean-local :
