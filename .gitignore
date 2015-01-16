@@ -45,3 +45,6 @@ m4/
 cngplp/src/.deps/
 backend/cnusb
 **/config.h.in~
+cngplp/mkinstalldirs
+**/confdefs.h
+**/conftest.c
