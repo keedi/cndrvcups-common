@@ -35,13 +35,10 @@ backend/configure.in
 buftool/configure.in
 cngplp/configure.in
 buftool/libtool
-buftool/m4/
-cngplp/m4/
 config.guess
 config.sub
 libtool
 ltmain.sh
-m4/
 cngplp/src/.deps/
 backend/cnusb
 **/config.h.in~
