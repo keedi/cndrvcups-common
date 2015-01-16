@@ -13,7 +13,6 @@ AM_INIT_AUTOMAKE([foreign -Wall])
     # `'%'-style pattern rules are a GNU make extension`
 AC_PROG_CC
 AM_PROG_AR
-LT_INIT
 LT_INIT # needs to be after AM_PROGS_AR
 AC_CONFIG_HEADERS([config.h])
 AC_CONFIG_SUBDIRS([backed buftool c3plmod_ipc cngplp cngplp/po cngplp/src cngplp/cnjatool])
