@@ -1,5 +1,7 @@
 SUBDIRS = backend buftool c3plmod_ipc cngplp
 
+ACLOCAL_AMFLAGS = -I m4
+
 _prefix=/usr
 
 #dirs= cngplp buftool backend #cpca
