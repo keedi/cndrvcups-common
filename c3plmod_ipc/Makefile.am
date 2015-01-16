@@ -1,7 +1,7 @@
 ###################################################
 #                                           	  #
 #  Vector Driver API Generi C3PL Driver)          #
-#          Makefile 				  			  #
+#          Makefile				  #
 #                                           	  #
 ###################################################
 
@@ -53,6 +53,7 @@ CLIENT_OBJS=\
 	$(IPCLIBDIR)/opvp_rpc_core.o
 
 # Depending Header Files for Client Library
+CLIENT_DEPENDENTdir=$(IPCLIBDIR)
 CLIENT_DEPENDENT_HEADERS=\
 	$(IPCLIBDIR)/opvp_rpc_client.h\
 	$(IPCLIBDIR)/opvp_rpc_client_02.h\
@@ -79,12 +80,12 @@ $(LIBNAME_REAL): $(CLIENT_OBJS)
 
 
 ### Compile : No Editing is necessary ###
-%.o: %.c
+.c.o:
 	@echo Compiling $< ...
 	$(CC) $(CPOPTIONS_R) $< $(CFLAGS_R) $(INCLUDE) -o $@
 
 
-### Specifying Depending Header FilesFNo Editing is necessary ###
+### Specifying Depending Header Filesï¿½FNo Editing is necessary ###
 $(CLIENT_OBJS) : $(CLIENT_DEPENDENT_HEADERS)
 
 
@@ -94,14 +95,13 @@ $(CLIENT_OBJS) : Makefile
 
 ### Install : No Editing is necessary ###
 # for Release
-install:
+install-exec-local:
 	strip $(LIBNAME_REAL)
 	@echo cp $(LIBNAME_REAL) $(CLIENT_INSTALLDIR)
 	cp $(LIBNAME_REAL) $(CLIENT_INSTALLDIR)
 
 
 ### Clean-up : No Editing is necessary ###
-clean:
+clean-local:
 	@echo rm -rf $(LIBNAME_REAL) $(CLIENT_OBJS) *~ core
 	rm -rf $(LIBNAME_REAL) $(CLIENT_OBJS) *~ core
-

@@ -1,3 +1,5 @@
+SUBDIRS = backend buftool c3plmod_ipc cngplp
+
 _prefix=/usr
 
 dirs= cngplp buftool backend #cpca
@@ -8,16 +10,16 @@ scripts=for dir in $(dirs); do\
 all :
 	$(scripts)
 
-clean :
+clean-local :
 	target=$@; $(scripts)
 
-distclean :
+distclean-local :
 	target=$@; $(scripts)
 
-install :
+install-exec-local :
 	target=$@; $(scripts)
 
-uninstall :
+uninstall-local :
 	target=$@; $(scripts)
 
 gen :
