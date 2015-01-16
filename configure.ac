@@ -13,7 +13,7 @@ AM_INIT_AUTOMAKE([foreign -Wall])
     # `'%'-style pattern rules are a GNU make extension`
 AC_PROG_CC
 AM_PROG_AR
-AC_PROG_RANLIB 
+#AC_PROG_RANLIB 
     # is obsolete because of LT_INIT, but omitting it causes trouble 
     # on Ubuntu 12.04 i386
 LT_INIT # needs to be after AM_PROGS_AR

@@ -15,7 +15,6 @@ AC_SUBST(PROG_PATH)
 
 # Checks for programs.
 AC_PROG_CC
-AC_PROG_RANLIB
 
 # Checks for libraries.
 
