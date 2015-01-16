@@ -44,3 +44,4 @@ ltmain.sh
 m4/
 cngplp/src/.deps/
 backend/cnusb
+**/config.h.in~
