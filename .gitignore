@@ -38,7 +38,6 @@ buftool/libtool
 config.guess
 config.sub
 libtool
-ltmain.sh
 cngplp/src/.deps/
 backend/cnusb
 **/config.h.in~
