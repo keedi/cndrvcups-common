@@ -1,9 +1,9 @@
-#                                               -*- Autoconf -*-
-# Process this file with autoconf to produce a configure script.
-
-AC_INIT(buftool.c)
+AC_INIT([cnusb], [1.0.0], [krichter722@aol.de])
+AC_CONFIG_MACRO_DIR([m4])
+LT_INIT
+AM_INIT_AUTOMAKE([foreign])
+#AC_CONFIG_SRCDIR([acconfig.h])
 AM_CONFIG_HEADER(config.h)
-AM_INIT_AUTOMAKE(libbuftool.a, 1.0.0, no-define)
 
 AC_ARG_ENABLE(progpath)
 if test "${enable_progpath}" = "" ; then
@@ -15,20 +15,21 @@ AC_SUBST(PROG_PATH)
 
 # Checks for programs.
 AC_PROG_CC
-AC_PROG_INSTALL
-# AM_PROG_LIBTOOL
-AC_PROG_RANLIB
 
 # Checks for libraries.
 
 # Checks for header files.
 AC_HEADER_STDC
-AC_CHECK_HEADERS([stdlib.h string.h unistd.h])
+AC_CHECK_HEADERS([fcntl.h stdlib.h sys/ioctl.h termios.h])
 
 # Checks for typedefs, structures, and compiler characteristics.
 
 # Checks for library functions.
-AC_FUNC_MALLOC
+AC_PROG_GCC_TRADITIONAL
+AC_FUNC_SELECT_ARGTYPES
+AC_TYPE_SIGNAL
+AC_FUNC_VPRINTF
+AC_CHECK_FUNCS([memmove memset select strchr strerror strncasecmp strstr])
 
-#AC_CONFIG_FILES([Makefile])
-AC_OUTPUT([Makefile])
+AC_CONFIG_FILES([Makefile])
+AC_OUTPUT

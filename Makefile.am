@@ -2,13 +2,13 @@ SUBDIRS = backend buftool c3plmod_ipc cngplp
 
 _prefix=/usr
 
-dirs= cngplp buftool backend #cpca
-scripts=for dir in $(dirs); do\
-				(cd $$dir; make $$target)|| exit 1;\
-		done
+#dirs= cngplp buftool backend #cpca
+#scripts=for dir in $(dirs); do\
+#				(cd $$dir; make $$target)|| exit 1;\
+#		done
 
-all-local :
-	$(scripts)
+#all-local :
+#	$(scripts)
 
 clean-local :
 	target=$@; $(scripts)
