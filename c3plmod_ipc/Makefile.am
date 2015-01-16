@@ -9,6 +9,8 @@
 # Compiler Definition
 CC=gcc
 
+ACLOCAL_AMFLAGS = -I m4
+
 # Directories
 CLIBDIR=$(LIBDIR)
 CLIENT_INSTALLDIR = $(DESTDIR)$(CLIBDIR)

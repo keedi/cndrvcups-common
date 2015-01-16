@@ -1,5 +1,7 @@
 backenddir = $(libdir)/cups/backend
 
+ACLOCAL_AMFLAGS = -I m4
+
 backend_PROGRAMS = cnusb
 
 cnusb_SOURCES = cnusb.c

@@ -1,5 +1,7 @@
 lib_LIBRARIES = libbuftool.a
 
+ACLOCAL_AMFLAGS = -I m4
+
 libbuftool_a_SOURCES = \
 	buftool.c buflist.c buflist.h buftool.h
 

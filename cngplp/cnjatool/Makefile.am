@@ -1,5 +1,7 @@
 bin_PROGRAMS = cnjatool
 
+ACLOCAL_AMFLAGS = -I m4
+
 cnjatool_SOURCES = \
 		main.c
 
