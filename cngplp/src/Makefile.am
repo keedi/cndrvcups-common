@@ -1,6 +1,7 @@
 confdir = /usr/share/cngplp
 
 ACLOCAL_AMFLAGS = -I m4
+LDFLAGS = -lgmodule-2.0
 
 AUTOMAKE_OPTIONS=foreign
 AM_CFLAGS=-O2 -Wall

@@ -33,10 +33,9 @@ AM_GLIB_GNU_GETTEXT
 
 AC_PROG_LIBTOOL
 
-AC_OUTPUT([
-Makefile
+AC_CONFIG_FILES([Makefile
 cnjatool/Makefile
 src/Makefile
-po/Makefile
-])
+po/Makefile])
+AC_OUTPUT
 

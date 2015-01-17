@@ -39,7 +39,10 @@ config.guess
 config.sub
 libtool
 cngplp/src/.deps/
+cngplp/cnjatool/.deps/main.Po
 backend/cnusb
+cngplp/cnjatool/cnjatool
+cngplp/src/cngplp
 **/config.h.in~
 cngplp/mkinstalldirs
 buftool/ltmain.sh
@@ -49,3 +52,8 @@ cngplp/m4/libtool.m4
 confdefs.h
 ltmain.sh
 m4/libtool.m4
+c3plmod_ipc/m4/libtool.m4
+c3plmod_ipc/m4/lt~obsolete.m4
+c3plmod_ipc/m4/ltoptions.m4
+c3plmod_ipc/m4/ltsugar.m4
+c3plmod_ipc/m4/ltversion.m4
