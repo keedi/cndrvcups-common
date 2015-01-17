@@ -42,5 +42,10 @@ cngplp/src/.deps/
 backend/cnusb
 **/config.h.in~
 cngplp/mkinstalldirs
-**/confdefs.h
-**/conftest.c
+buftool/ltmain.sh
+buftool/m4/libtool.m4
+cngplp/ltmain.sh
+cngplp/m4/libtool.m4
+confdefs.h
+ltmain.sh
+m4/libtool.m4
