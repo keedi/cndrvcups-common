@@ -57,12 +57,9 @@ COMPILE = $(CC) -c $(DEFS) $(AM_CPPFLAGS) $(CPPFLAGS) $(CFLAGS) $(XCFLAGS)
 SOURCES = 
 POFILES = @POFILES@
 GMOFILES = @GMOFILES@
-DISTFILES = LINGUAS ChangeLog Makefile.in.in POTFILES.in $(GETTEXT_PACKAGE).pot \
+distfiles = LINGUAS ChangeLog POTFILES.in $(GETTEXT_PACKAGE).pot \
 $(POFILES) $(GMOFILES) $(SOURCES)
 
-#POTFILES = \
-    # causes `error: blank line following trailing backslash`, unclear what 
-    # that intially meant
 POTFILES = POTFILES
 
 CATALOGS = @CATALOGS@
@@ -129,7 +126,6 @@ $(srcdir)/$(GETTEXT_PACKAGE).pot: $(POTFILES)
 	   || ( rm -f $(srcdir)/$(GETTEXT_PACKAGE).pot \
 		&& mv $(GETTEXT_PACKAGE).po $(srcdir)/$(GETTEXT_PACKAGE).pot )
 
-install: install-exec install-data
 install-exec-local:
 install-data-local: install-data-@USE_NLS@
 install-data-no: all
@@ -211,8 +207,8 @@ maintainer-clean-local: distclean
 	rm -f $(GMOFILES)
 
 distdir = ../$(GETTEXT_PACKAGE)-$(VERSION)/$(subdir)
-dist distdir: $(DISTFILES)
-	dists="$(DISTFILES)"; \
+dist distdir: $(distfiles)
+	dists="$(distfiles)"; \
 	for file in $$dists; do \
 	  ln $(srcdir)/$$file $(distdir) 2> /dev/null \
 	    || cp -p $(srcdir)/$$file $(distdir); \
@@ -262,11 +258,3 @@ POTFILES: POTFILES.in
 		| sed -e '$$s/\\$$//') > $@-t \
 	    && chmod a-w $@-t \
 	    && mv $@-t $@ )
-
-Makefile: Makefile.in.in ../config.status POTFILES
-	cd .. \
-	  && $(SHELL) ./config.status $(subdir)/$@.in
-
-# Tell versions [3.59,3.63) of GNU make not to export all variables.
-# Otherwise a system limit (for SysV at least) may be exceeded.
-.NOEXPORT:

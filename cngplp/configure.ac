@@ -37,6 +37,6 @@ AC_OUTPUT([
 Makefile
 cnjatool/Makefile
 src/Makefile
-po/Makefile.in
+po/Makefile
 ])
 
