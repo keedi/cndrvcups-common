@@ -2,7 +2,6 @@ AC_INIT([cnusb], [1.0.0], [krichter722@aol.de])
 AC_CONFIG_MACRO_DIR([m4])
 LT_INIT
 AM_INIT_AUTOMAKE([foreign])
-#AC_CONFIG_SRCDIR([acconfig.h])
 AM_CONFIG_HEADER(config.h)
 
 AC_ARG_ENABLE(progpath)

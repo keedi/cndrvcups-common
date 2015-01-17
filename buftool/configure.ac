@@ -4,6 +4,8 @@ AC_INIT([buftool.c], [1.0.0], [krichter722@aol.de])
 AC_CONFIG_MACRO_DIR([m4])
 LT_INIT
 AM_INIT_AUTOMAKE([foreign])
+AH_VERBATIM([_PROG_PATH],
+[#undef PROG_PATH])
 AM_CONFIG_HEADER(config.h)
 
 AC_ARG_ENABLE(progpath)
