@@ -12,6 +12,8 @@ CC=gcc
 ACLOCAL_AMFLAGS = -I m4
 
 # Directories
+DESTDIR=/usr/local #@TODO: not replaced when specified as variable (both 
+    # environment variable and make variable)
 CLIBDIR=$(LIBDIR)
 CLIENT_INSTALLDIR = $(DESTDIR)$(CLIBDIR)
 IPCLIBDIR = ./ipclib
