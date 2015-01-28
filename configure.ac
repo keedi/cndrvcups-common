@@ -18,8 +18,8 @@ AM_PROG_AR
     # on Ubuntu 12.04 i386
 LT_INIT # needs to be after AM_PROGS_AR
 AC_CONFIG_HEADERS([config.h])
-AC_CONFIG_SUBDIRS([backed buftool c3plmod_ipc cngplp cngplp/cnjatool cngplp/po cngplp/src])
-AC_CONFIG_FILES([Makefile backend/Makefile buftool/Makefile c3plmod_ipc/Makefile cngplp/Makefile cngplp/po/Makefile cngplp/src/Makefile cngplp/cnjatool/Makefile])
+AC_CONFIG_SUBDIRS([backed buftool c3plmod_ipc cngplp])
+AC_CONFIG_FILES([Makefile backend/Makefile buftool/Makefile c3plmod_ipc/Makefile cngplp/Makefile])
     # omitting causes `error: no 'Makefile.am' found for any configure output 
     # Did you forget AC_CONFIG_FILES([Makefile]) in configure.ac?`
 AC_OUTPUT
