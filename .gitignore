@@ -57,3 +57,5 @@ c3plmod_ipc/m4/lt~obsolete.m4
 c3plmod_ipc/m4/ltoptions.m4
 c3plmod_ipc/m4/ltsugar.m4
 c3plmod_ipc/m4/ltversion.m4
+backend/.deps/
+buftool/.deps/
