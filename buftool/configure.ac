@@ -3,7 +3,6 @@
 AC_INIT([buftool.c], [1.0.0], [krichter722@aol.de])
 AC_CONFIG_MACRO_DIR([m4])
 LT_INIT
-AC_PROG_RANLIB
 AM_INIT_AUTOMAKE([foreign])
 AH_VERBATIM([_PROG_PATH],
 [#undef PROG_PATH])
